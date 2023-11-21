@@ -1,7 +1,7 @@
 # netlify.toml
 
 [build]
-  command = "./install-ant.sh && ant build"
+  command = "bash ./install-ant.sh && ant build"
   publish = "dist/"
 
 # Si votre projet nécessite des variables d'environnement
