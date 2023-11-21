@@ -1,8 +1,8 @@
 # netlify.toml
 
 [build]
-  command = "mvn clean install"  # Commande de construction Maven
-  publish = "target/"  # Répertoire à déployer, généralement "target/"
+  command = "./gradlew build"
+  publish = "build/"
 
 # Si votre projet nécessite des variables d'environnement
 [context.production.environment]
