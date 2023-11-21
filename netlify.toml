@@ -1,8 +1,8 @@
 # netlify.toml
 
 [build]
-  command = "./gradlew build"
-  publish = "build/"
+  command = "ant build"
+  publish = "dist/"
 
 # Si votre projet nécessite des variables d'environnement
 [context.production.environment]
