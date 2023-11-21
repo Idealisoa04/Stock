@@ -1,0 +1,11 @@
+# netlify.toml
+
+[build]
+  command = "mvn clean install"  # Commande de construction Maven
+  publish = "target/"  # Répertoire à déployer, généralement "target/"
+
+# Si votre projet nécessite des variables d'environnement
+[context.production.environment]
+  JAVA_OPTS = "-Dspring.profiles.active=production"
+
+# Si vous avez des redirections à définir
